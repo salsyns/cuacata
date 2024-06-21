@@ -75,7 +75,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
   }
 
   String _getWeatherIconUrl(String iconCode) {
-    return 'http://openweathermap.org/img/wn/$iconCode@2x.png';
+    return 'https://openweathermap.org/img/wn/$iconCode@2x.png';
   }
 
   String _translateWeatherDescription(String description) {

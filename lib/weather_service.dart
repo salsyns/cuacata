@@ -31,7 +31,7 @@ class WeatherService {
 
   Future<Map<String, dynamic>> fetchUVIndex(double lat, double lon) async {
     final response = await http.get(
-      Uri.parse('http://api.openweathermap.org/data/2.5/uvi?lat=$lat&lon=$lon&units=metric&appid=$apiKey'),
+      Uri.parse('https://api.openweathermap.org/data/2.5/uvi?lat=$lat&lon=$lon&units=metric&appid=$apiKey'),
     );
 
     if (response.statusCode == 200) {
