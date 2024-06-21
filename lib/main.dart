@@ -41,35 +41,32 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
   List<dynamic>? _hourlyWeatherData;
   double? _uvIndex;
 
-  Future<void> _searchWeather(BuildContext context) async {
-  final location = _controller.text;
-  if (location.isNotEmpty) {
-    try {
-      final data = await _weatherService.fetchWeather(location);
-      final hourlyData = await _weatherService.fetchHourlyWeather(
-        data['coord']['lat'],
-        data['coord']['lon'],
-      );
-      final uvData = await _weatherService.fetchUVIndex(
-        data['coord']['lat'],
-        data['coord']['lon'],
-      );
-
-      // Memperbarui UI menggunakan setState
-      setState(() {
-        _weatherData = data;
-        _hourlyWeatherData = hourlyData;
-        _uvIndex = uvData['value'];
-      });
-    } catch (e) {
-      // Menangani kesalahan
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Tidak dapat menemukan lokasi.')),
-      );
+  Future<void> _searchWeather() async {
+    final location = _controller.text;
+    if (location.isNotEmpty) {
+      try {
+        final data = await _weatherService.fetchWeather(location);
+        final hourlyData = await _weatherService.fetchHourlyWeather(
+          data['coord']['lat'],
+          data['coord']['lon'],
+        );
+        final uvData = await _weatherService.fetchUVIndex(
+          data['coord']['lat'],
+          data['coord']['lon'],
+        );
+        setState(() {
+          _weatherData = data;
+          _hourlyWeatherData = hourlyData;
+          _uvIndex = uvData['value'];
+        });
+      } catch (e) {
+        // Handle error
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Tidak dapat menemukan lokasi.')),
+        );
+      }
     }
   }
-}
-
 
   String _getWeatherIconUrl(String iconCode) {
     return 'http://openweathermap.org/img/wn/$iconCode@2x.png';
