@@ -145,7 +145,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
       case 'dust':
         return 'Berdebu';
       case 'volcanic ash':
-        return 'Abu Vulkanik';
+        return 'Abu Vulkanikk';
       case 'squalls':
         return 'Angin Kencang';
       case 'tornado':
