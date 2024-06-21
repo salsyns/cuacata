@@ -11,7 +11,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'App Cuaca Kelompok 4',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 92, 69, 72)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 92, 69, 72)),
         useMaterial3: true,
       ),
       home: const WeatherHomePage(),
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 }
 
 class WeatherHomePage extends StatefulWidget {
-  const WeatherHomePage({super.key});
+  const WeatherHomePage({Key? key});
 
   @override
   _WeatherHomePageState createState() => _WeatherHomePageState();
@@ -41,7 +41,13 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
   List<dynamic>? _hourlyWeatherData;
   double? _uvIndex;
 
-  Future<void> _searchWeather() async {
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  Future<void> _searchWeather(BuildContext context) async {
     final location = _controller.text;
     if (location.isNotEmpty) {
       try {
@@ -54,13 +60,13 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
           data['coord']['lat'],
           data['coord']['lon'],
         );
+
         setState(() {
           _weatherData = data;
           _hourlyWeatherData = hourlyData;
           _uvIndex = uvData['value'];
         });
       } catch (e) {
-        // Handle error
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Tidak dapat menemukan lokasi.')),
         );
@@ -145,7 +151,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
       case 'dust':
         return 'Berdebu';
       case 'volcanic ash':
-        return 'Abu Vulkanikk';
+        return 'Abu Vulkanik';
       case 'squalls':
         return 'Angin Kencang';
       case 'tornado':
@@ -161,15 +167,15 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
 
   String _getUVIndexCategory(double uvIndex) {
     if (uvIndex < 3) {
-      return 'Low';
+      return 'Rendah';
     } else if (uvIndex < 6) {
-      return 'Moderate';
+      return 'Sedang';
     } else if (uvIndex < 8) {
-      return 'High';
+      return 'Tinggi';
     } else if (uvIndex < 11) {
-      return 'Very High';
+      return 'Sangat Tinggi';
     } else {
-      return 'Extreme';
+      return 'Ekstrem';
     }
   }
 
@@ -198,7 +204,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                         hintText: 'Masukkan Nama Lokasi',
                         suffixIcon: IconButton(
                           icon: Icon(Icons.search),
-                          onPressed: _searchWeather,
+                          onPressed: () => _searchWeather(context),
                         ),
                       ),
                     ),
@@ -220,7 +226,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  DateFormat('EEEE, d MMMM y', 'id_ID').format(DateTime.now().toLocal()), // Ubah locale disini
+                                  DateFormat('EEEE, d MMMM y', 'id_ID').format(DateTime.now().toLocal()),
                                   style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.white70,
@@ -254,7 +260,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                     Column(
                                       children: [
                                         Text(
-                                          'Precipitation',
+                                          'Curah Hujan',
                                           style: TextStyle(
                                             fontSize: 16,
                                             color: Colors.white70,
@@ -272,7 +278,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                     Column(
                                       children: [
                                         Text(
-                                          'UV Index',
+                                          'Indeks UV',
                                           style: TextStyle(
                                             fontSize: 16,
                                             color: Colors.white70,
@@ -281,7 +287,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                         Text(
                                           _uvIndex != null
                                               ? _getUVIndexCategory(_uvIndex!)
-                                              : 'Loading...', // Menampilkan kategori UV Index atau teks 'Loading...' jika data belum tersedia
+                                              : 'Memuat...', // Menampilkan kategori Indeks UV atau teks 'Memuat...' jika data belum tersedia
                                           style: TextStyle(
                                             fontSize: 16,
                                             color: Colors.white,
@@ -301,7 +307,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                   child: Column(
                                     children: [
                                       const Text(
-                                        'List PerJam:',
+                                        'Daftar Per Jam:',
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: Colors.white,
@@ -314,7 +320,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
                                           children: _hourlyWeatherData != null
                                               ? _hourlyWeatherData!.take(4).map((hourly) {
                                                   return WeatherHourlyWidget(
-                                                    time: DateFormat('h a ', 'id_ID').format(DateTime.parse(hourly['dt_txt']).toLocal()), // Ubah locale disini
+                                                    time: DateFormat('h a', 'id_ID').format(DateTime.parse(hourly['dt_txt']).toLocal()),
                                                     temp: '${hourly['main']['temp'].toStringAsFixed(0)}°C   ',
                                                     iconUrl: _getWeatherIconUrl(hourly['weather'][0]['icon']),
                                                   );
@@ -346,11 +352,11 @@ class WeatherHourlyWidget extends StatelessWidget {
   final String iconUrl;
 
   const WeatherHourlyWidget({
-    super.key,
+    Key? key,
     required this.time,
     required this.temp,
     required this.iconUrl,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
