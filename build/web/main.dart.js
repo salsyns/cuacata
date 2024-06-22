@@ -1173,7 +1173,7 @@ if(a!=null){s=a.b
 r=$.bK().d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}return"blur("+A.h(s*r)+"px)"}else return"none"},
-arU(a,b){var s,r,q,p,o,n="http://www.w3.org/2000/svg",m="createElementNS",l="setAttribute",k=b.fA(0),j=k.c,i=k.d
+arU(a,b){var s,r,q,p,o,n="https://www.w3.org/2000/svg",m="createElementNS",l="setAttribute",k=b.fA(0),j=k.c,i=k.d
 $.afR=$.afR+1
 s=A.X9($.alA(),!1)
 r=A.i(self.document,m,[n,"defs"])
@@ -1254,7 +1254,7 @@ q=A.aqQ(a,r,!1)
 break
 case 1:case 2:case 6:case 8:case 4:case 0:case 3:throw A.c(A.ce("Blend mode not supported in HTML renderer: "+b.k(0)))
 default:q=null}return q},
-ol(){var s,r=A.X9($.alA(),!1),q=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","filter"]),p=$.apj+1
+ol(){var s,r=A.X9($.alA(),!1),q=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","filter"]),p=$.apj+1
 $.apj=p
 p="_fcf"+p
 q.id=p
@@ -2113,7 +2113,7 @@ n=b*((800+(q-p)*0.5)/600)
 return new A.x(r-o,p-n,s+o,q+n).c1(A.arP(b)).cZ(20)},
 aEP(a,b){if(b===0)return null
 return new A.a79(Math.min(b*((800+(a.c-a.a)*0.5)/600),b*((800+(a.d-a.b)*0.5)/600)),A.arP(b))},
-arT(){var s=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","svg"]),r=A.ae("1.1")
+arT(){var s=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","svg"]),r=A.ae("1.1")
 A.i(s,"setAttribute",["version",r==null?t.K.a(r):r])
 return s},
 a50(a,b){a.valueAsString=b
@@ -28040,7 +28040,7 @@ if(o!=null){h.cL(o,b)
 return}n=A.arT()
 p=A.ae("visible")
 A.i(n,g,["overflow",p==null?t.K.a(p):p])
-p=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","path"])
+p=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","path"])
 n.append(p)
 m=b.b
 if(m!==B.ah)if(m!==B.b6){m=b.c
@@ -28481,7 +28481,7 @@ this.pE()},
 grO(){return!0},
 $iVF:1}
 A.a7b.prototype={
-z7(a,b){var s,r,q,p,o=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","feColorMatrix"]),n=o.type
+z7(a,b){var s,r,q,p,o=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","feColorMatrix"]),n=o.type
 n.toString
 A.a4Z(n,1)
 n=o.result
@@ -28493,7 +28493,7 @@ for(s=this.b,r=0;r<20;++r){q=s.createSVGNumber()
 p=a[r]
 q.value=p
 n.appendItem(q)}this.c.append(o)},
-n8(a,b,c){var s="setAttribute",r=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","feFlood"]),q=A.ae(a)
+n8(a,b,c){var s="setAttribute",r=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","feFlood"]),q=A.ae(a)
 A.i(r,s,["flood-color",q==null?t.K.a(q):q])
 q=A.ae(b)
 A.i(r,s,["flood-opacity",q==null?t.K.a(q):q])
@@ -28501,7 +28501,7 @@ q=r.result
 q.toString
 A.qH(q,c)
 this.c.append(r)},
-Gs(a,b,c){var s=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","feBlend"]),r=s.in1
+Gs(a,b,c){var s=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","feBlend"]),r=s.in1
 r.toString
 A.qH(r,a)
 r=s.in2
@@ -28511,7 +28511,7 @@ r=s.mode
 r.toString
 A.a4Z(r,c)
 this.c.append(s)},
-tN(a,b,c,d,e,f,g,h){var s=A.i(self.document,"createElementNS",["http://www.w3.org/2000/svg","feComposite"]),r=s.in1
+tN(a,b,c,d,e,f,g,h){var s=A.i(self.document,"createElementNS",["https://www.w3.org/2000/svg","feComposite"]),r=s.in1
 r.toString
 A.qH(r,a)
 r=s.in2
