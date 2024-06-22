@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'weather_service.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: ".env");
   Intl.defaultLocale = 'id_ID';
   initializeDateFormatting('id_ID', null).then((_) {
     runApp(const MyApp());
@@ -145,7 +147,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
       case 'dust':
         return 'Berdebu';
       case 'volcanic ash':
-        return 'Abu Vulkanikk';
+        return 'Abu Vulkanik';
       case 'squalls':
         return 'Angin Kencang';
       case 'tornado':
