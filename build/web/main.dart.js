@@ -43236,7 +43236,7 @@ wO(a,b){return this.acO(a,b)},
 acO(a,b){var s=0,r=A.Q(t.a),q,p
 var $async$wO=A.R(function(c,d){if(c===1)return A.N(d,r)
 while(true)switch(s){case 0:s=3
-return A.V(A.akD(A.fC("http://api.openweathermap.org/data/2.5/uvi?lat="+A.h(a)+"&lon="+A.h(b)+u.O)),$async$wO)
+return A.V(A.akD(A.fC("https://api.openweathermap.org/data/2.5/uvi?lat="+A.h(a)+"&lon="+A.h(b)+u.O)),$async$wO)
 case 3:p=d
 if(p.b===200){q=B.cH.dV(0,A.akz(A.ak6(p.e).c.a.h(0,"charset")).dV(0,p.w))
 s=1
