@@ -34,14 +34,7 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
 
 
-## Deploy ke Vercel
-
-<div align="center">
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsalsyns%2Fcuacata&project-name=cuacata&repository-name=cuacata&root-directory=build/web&build-command=flutter%20build%20web&output-directory=build%2Fweb">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel">
-  </a>
-</div>
-<br><br><br>
+<br><br>
 <div align="center">
   <img src="https://img.shields.io/badge/Maintenance-yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/forks/salsyns/cuacata?style=for-the-badge&color=orange" alt="Fork">
