@@ -7,8 +7,11 @@
 Anda dapat melihat demo aplikasi di link berikut:<br>
 [Cuaca Tugas Akhir](https://cuacata.vercel.app/)
 
-## Kolaborasi
 
+
+
+## Kolaborasi
+<div align="center">
 <a href="https://github.com/MoehamadDefry">
   <img src="https://github.com/MoehamadDefry.png" width="100" height="100" alt="MoehamadDefry" style="border-radius: 50%;">
 </a>
@@ -18,16 +21,30 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 <a href="https://github.com/meriantika">
   <img src="https://github.com/meriantika.png" width="100" height="100" alt="meriantika" style="border-radius: 50%;">
 </a>
+</div>
+<div align="center">
 <a href="https://github.com/tiaraulfiah">
   <img src="https://github.com/tiaraulfiah.png" width="100" height="100" alt="tiaraulfiah" style="border-radius: 50%;">
 </a>
 <a href="https://github.com/benifati-gulo">
   <img src="https://github.com/benifati-gulo.png" width="100" height="100" alt="benifati-gulo" style="border-radius: 50%;">
-</a>
+</div>
+
+
+
 
 ## Special Tag
 
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
+
+
+
+
+
+
+
+
+
 
 
 <div align="center">
