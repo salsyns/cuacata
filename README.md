@@ -9,11 +9,12 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 
 ## Kolaborasi
 
-[![Kolaborasi @salsyns/cuacata](https://raw.githubusercontent.com/salsyns/cuacata/master/docs/img/contributors.svg)](https://github.com/salsyns/cuacata/graphs/contributors)
+[![Kolaborasi @salsyns/cuacata](https://img.shields.io/github/contributors/salsyns/cuacata?style=for-the-badge)](https://github.com/salsyns/cuacata/graphs/contributors)
 
 ## Special Tag
 
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
+
 <div align="center">
   <img src="https://img.shields.io/badge/Maintenance-yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/forks/salsyns/cuacata?style=for-the-badge&color=orange" alt="Fork">
