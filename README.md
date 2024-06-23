@@ -1,13 +1,11 @@
 <div align="center">
   <h1>Cuaca Tugas Akhir Kelompok 4</h1>
-</div>
+</div><br>
 
 ## 👇Demo👇
 
 Anda dapat melihat demo aplikasi di link berikut:<br>
 [Cuaca Tugas Akhir](https://cuacata.vercel.app/)
-
-
 
 
 ## Kolaborasi
@@ -31,22 +29,11 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 </div>
 
 
-
-
 ## Special Tag
 
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
 
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br><br>
 <div align="center">
   <img src="https://img.shields.io/badge/Maintenance-yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/forks/salsyns/cuacata?style=for-the-badge&color=orange" alt="Fork">
