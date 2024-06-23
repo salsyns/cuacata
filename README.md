@@ -9,7 +9,6 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 
 ## Kontributor
 
-<div align="center">
   <a href="https://github.com/MoehamadDefry">
     <img src="https://github.com/MoehamadDefry.png" width="100" height="100" alt="MoehamadDefry" style="border-radius: 50%;">
   </a>
@@ -22,16 +21,15 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
   <a href="https://github.com/tiaraulfiah">
     <img src="https://github.com/tiaraulfiah.png" width="100" height="100" alt="tiaraulfiah" style="border-radius: 50%;">
   </a>
-</div>
-@benifatigulo
+  <a href="https://github.com/benifati-gulo">
+    <img src="https://github.com/benifati-gulo.png" width="100" height="100" alt="tiaraulfiah" style="border-radius: 50%;">
+  </a>
 
 ## Special Tag
 
-<div align="center">
   <a href="https://github.com/adeputraprimasuhendri">
     <img src="https://github.com/adeputraprimasuhendri.png" width="100" height="100" alt="adeputraprimasuhendri" style="border-radius: 50%;">
   </a>
-</div>
 
 <br>
 <br>
