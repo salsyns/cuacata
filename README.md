@@ -33,7 +33,7 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
 
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
 
-<br><br><br><br><br>
+<br><br><br>
 <div align="center">
   <img src="https://img.shields.io/badge/Maintenance-yes-green?style=for-the-badge">
   <img src="https://img.shields.io/github/forks/salsyns/cuacata?style=for-the-badge&color=orange" alt="Fork">
@@ -44,4 +44,3 @@ Anda dapat melihat demo aplikasi di link berikut:<br>
   <img src="https://img.shields.io/badge/VSCode-1.89.1-blue?logo=visual-studio-code&logoColor=white&style=for-the-badge">
   <img src="https://img.shields.io/badge/Windows-10-blue?logo=windows&logoColor=white&style=for-the-badge">
 </div>
-<div align="right">[ <a href="#table-of-contents">↑ Back to top ↑</a> ]</div>
