@@ -7,13 +7,28 @@
 Anda dapat melihat demo aplikasi di link berikut:<br>
 [Cuaca Tugas Akhir](https://cuacata.vercel.app/)
 
-## Kontributor
+## Kolaborasi
 
-[![contributors](https://contrib.rocks/image?repo=salsyns/cuacata)](https://github.com/salsyns/cuacata/graphs/contributors)
+<a href="https://github.com/MoehamadDefry">
+  <img src="https://github.com/MoehamadDefry.png" width="100" height="100" alt="MoehamadDefry" style="border-radius: 50%;">
+</a>
+<a href="https://github.com/donimaulanaa">
+  <img src="https://github.com/donimaulanaa.png" width="100" height="100" alt="donimaulanaa" style="border-radius: 50%;">
+</a>
+<a href="https://github.com/meriantika">
+  <img src="https://github.com/meriantika.png" width="100" height="100" alt="meriantika" style="border-radius: 50%;">
+</a>
+<a href="https://github.com/tiaraulfiah">
+  <img src="https://github.com/tiaraulfiah.png" width="100" height="100" alt="tiaraulfiah" style="border-radius: 50%;">
+</a>
+<a href="https://github.com/adeputraprimasuhendri">
+  <img src="https://github.com/adeputraprimasuhendri.png" width="100" height="100" alt="adeputraprimasuhendri" style="border-radius: 50%;">
+</a>
 
 ## Special Tag
 
 [@adeputraprimasuhendri](https://github.com/adeputraprimasuhendri)
+
 
 <div align="center">
   <img src="https://img.shields.io/badge/Maintenance-yes-green?style=for-the-badge">
