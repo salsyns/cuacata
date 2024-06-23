@@ -7,9 +7,9 @@
 Anda dapat melihat demo aplikasi di link berikut:<br>
 [Cuaca Tugas Akhir](https://cuacata.vercel.app/)
 
-## Kolaborasi
+## Kontributor
 
-[![Kolaborasi @salsyns/cuacata](https://img.shields.io/github/contributors/salsyns/cuacata?style=for-the-badge)](https://github.com/salsyns/cuacata/graphs/contributors)
+[![contributors](https://contrib.rocks/image?repo=salsyns/cuacata)](https://github.com/salsyns/cuacata/graphs/contributors)
 
 ## Special Tag
 
